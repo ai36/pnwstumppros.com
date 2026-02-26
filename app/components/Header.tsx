@@ -34,7 +34,7 @@ export default function Header() {
                 alt={COMPANY_NAME}
                 width={206}
                 height={28}
-                className="h-auto w-44 min-[1024px]:w-[224px]"
+                className="h-auto w-44 min-[1024px]:w-56"
                 priority
               />
             </Link>
