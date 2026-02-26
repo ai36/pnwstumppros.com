@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f9f6f0;
+  --foreground: #1b1b1b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: #2d6a4f;
+  --color-primary-light: #52b788;
+  --color-primary-dark: #1b4332;
+  --color-accent: #b5835a;
+  --color-surface: #f9f6f0;
+  --color-surface-alt: #ede8df;
+  --font-sans: var(--font-body);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+select,
+select option {
+  font-family: inherit;
+}
