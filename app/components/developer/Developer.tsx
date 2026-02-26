@@ -2,12 +2,13 @@ import styles from "./developer.module.css";
 import Link from "next/link";
 
 export const Developer = () => {
+  const projectName = (process.env.NEXT_PUBLIC_PROJECT_NAME?.trim() || "pnwstumpprops").toLowerCase();;
   return (
     <section className={styles.devBox}>
       <h2 className={styles.devTitle}>Agama Labs — Web & App Development and Digital Marketing</h2>
       <Link
         className={styles.devLink}
-        href={`https://agamalabs.com/?utm_source=${process.env.NEXT_PUBLIC_PROJECT_NAME.toLowerCase() ?? "pnwstumpprops"}&utm_medium=footer-link`}
+        href={`https://agamalabs.com/?utm_source=${projectName ?? ""}&utm_medium=footer-link`}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Agama Labs — Web & App Development and Digital Marketing"
