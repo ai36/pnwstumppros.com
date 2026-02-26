@@ -42,7 +42,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sans.variable} font-sans antialiased`}>{children}</body>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="9m21iS8l66LT5GGhFN_-H8hHEkP-f4ekCkIpCaqUs9I"
+        />
+      </head>
+      <body className={`${sans.variable} font-sans antialiased`}>
+        {children}
+      </body>
       {process.env.NEXT_PUBLIC_GA_ID ? (
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
       ) : null}
